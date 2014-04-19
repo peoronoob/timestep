@@ -179,6 +179,7 @@ exports = Class(BufferedCanvas, function (supr) {
 		}
 	};
 
+	this.transform = function (a, b, c, d, e, f) { this._ctx.transform(a, b, c, d, e, f); }
 	this.translate = function (x, y) { this._ctx.translate(x, y); }
 	this.rotate = function (r) { this._ctx.rotate(r); }
 	this.scale = function (x, y) { this._ctx.scale(x, y); }
